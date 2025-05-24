@@ -65,37 +65,17 @@ Grid/random search with early stopping was executed for 30 epochs (patience = 5)
 
 The hybrid CNN + LSTM architecture outperformed all baselines, capturing both local temporal patterns (via convolution) and long-range dependencies (via recurrent layers).
 
-## Repository Structure
-
-.
-├── data/                  # Raw & processed OMNI csv files
-├── notebooks/
-│   └── tsa_final_code.ipynb  # End-to-end experimentation
-├── src/
-│   ├── models/            # Model classes
-│   ├── utils.py
-│   └── train.py
-└── README.md
 
 ## Quick-Start
 
-git clone https://github.com/<your-handle>/dst-forecasting.git
-cd dst-forecasting
+git clone https://github.com/m-vp/DST-Index-Forecasting.git
+cd DST-Index-Forecasting
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python src/train.py --model cnn_lstm
 
 The notebook `tsa_final_code.ipynb` reproduces the complete pipeline from data ingestion to inference.
 
-## Citation
-
-@misc{prashanth2025dst,
-  title   = {Hourly Dst Forecasting with Deep Learning 2010-2025},
-  author  = {Prashanth, P.},
-  howpublished = {GitHub},
-  year    = {2025},
-  url     = {https://github.com/<your-handle>/dst-forecasting}
-}
 
 ## License
 
